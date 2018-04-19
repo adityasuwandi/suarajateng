@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="BANTUAN/KELUHAN"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_text_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimaryText"
+            android:inputType="textAutoComplete|textCapWords"
+            android:imeOptions="actionNext"
+            android:maxLines="1"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Email">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimaryText"
+            android:inputType="textAutoComplete|textEmailAddress"
+            android:imeOptions="actionNext"
+            android:maxLines="1"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_text_keluhan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Bantuan/Keluhan">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:gravity="top"
+            android:layout_height="100dp"
+            android:textColor="@color/colorPrimaryText"
+            android:inputType="textMultiLine"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/button_submit_bantuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/colorText"
+            android:background="@color/colorPrimary"/>
+    </RelativeLayout>
+</LinearLayout>

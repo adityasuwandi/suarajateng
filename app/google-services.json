@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "336657047963",
+    "firebase_url": "https://suarakan-200707.firebaseio.com",
+    "project_id": "suarakan-200707",
+    "storage_bucket": "suarakan-200707.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336657047963:android:281e3a40c3228996",
+        "android_client_info": {
+          "package_name": "com.suarakan.suarakan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336657047963-ulbebn53bgt2gkm4oemkcqil1m72ag57.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.suarakan.suarakan",
+            "certificate_hash": "798232586e53dcca132cc83e8e4bd570416424cb"
+          }
+        },
+        {
+          "client_id": "336657047963-i2hjb7pg2esv0n8bvvit0o85ar2o8ion.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTpAEe8UvLeYDvTyMly5yqOx0ztUDmf9c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336657047963-i2hjb7pg2esv0n8bvvit0o85ar2o8ion.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

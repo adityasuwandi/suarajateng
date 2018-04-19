@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/video_persyaratan"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/unavailable"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="PERSYARATAN"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• WNI yang berusia 17 tahun atau lebih atau sudah/pernah kawin"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Tidak sedang terganggu jiwa/ingatannya"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Terdaftar sebagai pemilih"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Bukan anggota TNI/Polri"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Tidak sedang dicabut hak pilihnya"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Terdaftar di DPT"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Khusus untuk Pemilukada, calon peilih harus berdomisili sekurang-kurangnya 6 (enam) bulan di daerah yang bersangkutan"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/video_x"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/unavailable"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="Bagaimana Jika Tidak Terdaftar Pemilih"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Tidak Terdaftar Dalam DPS"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pada saat pengumuman DPS di masing-masing kelurahan, Pemilih segera melaporkan dirinya kepada PPS melalui RT/RW/PPDP sesuai batas waktu yang ditentukan"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Tidak Terdaftar Dalam DPT"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jika Pemilih terdaftar dalam DPS tetapi tidak terdaftar dalam DPT, maka ketua KPPS melaporkan kepada PPS untuk memasukkan pemilih tersebut ke dalam DPT paling lambat 1 (satu) hari sebelum hari pemungutan suara."
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</ScrollView>

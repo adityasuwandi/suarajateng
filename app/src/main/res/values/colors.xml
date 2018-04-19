@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryLight">#FFCCBC</color>
+    <color name="colorPrimaryDark">#E64A19</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorTimelineActive">#429662</color>
+    <color name="colorTimelineBulatActive">#29824C</color>
+    <color name="colorTimelineNonActive">#98c166</color>
+</resources>
