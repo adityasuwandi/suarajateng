@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 
 public class OverviewFragment extends Fragment implements View.OnClickListener {
 
-    private CardView cardGuide, cardTips, cardBantuan;
+    private CardView cardGuide, cardTips, cardBantuan, cardHoax;
     public OverviewFragment() {
         // Required empty public constructor
     }
@@ -34,9 +34,11 @@ public class OverviewFragment extends Fragment implements View.OnClickListener {
         cardGuide = view.findViewById(R.id.card_button_guide);
         cardTips = view.findViewById(R.id.card_button_tips);
         cardBantuan = view.findViewById(R.id.card_button_bantuan);
+        cardHoax=view.findViewById(R.id.card_button_hoax);
         cardGuide.setOnClickListener(this);
         cardTips.setOnClickListener(this);
         cardBantuan.setOnClickListener(this);
+        cardHoax.setOnClickListener(this);
         return view;
     }
 
@@ -48,6 +50,9 @@ public class OverviewFragment extends Fragment implements View.OnClickListener {
                 return;
             case R.id.card_button_tips:
                 startActivity(TipsActivity.class);
+                return;
+            case R.id.card_button_hoax:
+                startActivity(HoaxActivity.class);
                 return;
             case R.id.card_button_bantuan:
                 startActivity(BantuanActivity.class);
