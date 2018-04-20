@@ -22,7 +22,7 @@ import java.util.List;
 
 public class KandidatFragment extends Fragment implements View.OnClickListener {
 
-    private Button btnNomor1, btnNomor2, btnNomor3, btnNomor4;
+    private Button btnNomor1, btnNomor2;
     private MaterialBetterSpinner spinnerKotaKab;
     private RecyclerView recviewKandidat;
     private RecyclerView.Adapter adapter;
@@ -54,14 +54,10 @@ public class KandidatFragment extends Fragment implements View.OnClickListener {
     private void settingWidget(View view) {
         btnNomor1 = view.findViewById(R.id.button_nomor_1);
         btnNomor2 = view.findViewById(R.id.button_nomor_2);
-        btnNomor3 = view.findViewById(R.id.button_nomor_3);
-        btnNomor4 = view.findViewById(R.id.button_nomor_4);
         spinnerKotaKab = view.findViewById(R.id.spinner_kabupaten);
         recviewKandidat = view.findViewById(R.id.recview_kandidat);
         btnNomor1.setOnClickListener(this);
         btnNomor2.setOnClickListener(this);
-        btnNomor3.setOnClickListener(this);
-        btnNomor4.setOnClickListener(this);
         recviewKandidat.setHasFixedSize(true);
         recviewKandidat.setLayoutManager(new LinearLayoutManager(getContext()));
         recviewKandidat.setNestedScrollingEnabled(false);
@@ -94,12 +90,6 @@ public class KandidatFragment extends Fragment implements View.OnClickListener {
                 return;
             case R.id.button_nomor_2:
                 showDialog(1, R.drawable.no_2);
-                return;
-            case R.id.button_nomor_3:
-                showDialog(2, R.drawable.no_3);
-                return;
-            case R.id.button_nomor_4:
-                showDialog(3, R.drawable.no_4);
                 return;
         }
     }

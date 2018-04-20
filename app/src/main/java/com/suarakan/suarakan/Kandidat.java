@@ -12,13 +12,8 @@ public class Kandidat {
     private static List<Kandidat> kandidats = new ArrayList<>();
 
     public static enum City {
-        KOTA_BANDUNG, KABUPATEN_BANDUNG_BARAT, KOTA_BOGOR,
-        KABUPATEN_BOGOR, KOTA_CIREBON, KABUPATEN_CIREBON,
-        KOTA_SUKABUMI, KOTA_BANJAR, KOTA_BEKASI,
-        KABUPATEN_PURWAKARTA, KABUPATEN_SUMEDANG,
-        KABUPATEN_SUBANG, KABUPATEN_KUNINGAN,
-        KABUPATEN_MAJALENGKA, KABUPATEN_GARUT,
-        KABUPATEN_CIAMIS
+        KABUPATEN_BANYUMAS,KABUPATEN_KARANGANYAR,KABUPATEN_KUDUS,KABUPATEN_MAGELANG,
+        KABUPATEN_TEMANGGUNG,KABUPATEN_TEGAL,KOTA_TEGAL;
     }
 
     public Kandidat() {
@@ -52,53 +47,26 @@ public class Kandidat {
     public static List<Kandidat> getKandidats(City city, Context context) {
         String[] paslon = null;
         switch (city) {
-            case KOTA_BANDUNG:
-                paslon = context.getResources().getStringArray(R.array.kota_bandung);
+            case KABUPATEN_BANYUMAS:
+                paslon = context.getResources().getStringArray(R.array.kabupaten_banyumas);
                 break;
-            case KABUPATEN_BANDUNG_BARAT:
-                paslon = context.getResources().getStringArray(R.array.kabupaten_bandung_barat);
+            case KABUPATEN_KARANGANYAR:
+                paslon = context.getResources().getStringArray(R.array.kabupaten_karanganyar);
                 break;
-            case KOTA_BOGOR:
-                paslon = context.getResources().getStringArray(R.array.kota_bogor);
+            case KABUPATEN_KUDUS:
+                paslon = context.getResources().getStringArray(R.array.kabupaten_kudus);
                 break;
-            case KABUPATEN_BOGOR:
-                paslon = context.getResources().getStringArray(R.array.kabupaten_bogor);
+            case KABUPATEN_MAGELANG:
+                paslon = context.getResources().getStringArray(R.array.kabupaten_magelang);
                 break;
-            case KOTA_CIREBON:
-                paslon = context.getResources().getStringArray(R.array.kota_cirebon);
+            case KABUPATEN_TEMANGGUNG:
+                paslon = context.getResources().getStringArray(R.array.kabupaten_temanggung);
                 break;
-            case KABUPATEN_CIREBON:
-                paslon = context.getResources().getStringArray(R.array.kabupaten_cirebon);
+            case KABUPATEN_TEGAL:
+                paslon = context.getResources().getStringArray(R.array.kabupaten_tegal);
                 break;
-            case KOTA_SUKABUMI:
-                paslon = context.getResources().getStringArray(R.array.kota_sukabumi);
-                break;
-            case KOTA_BANJAR:
-                paslon = context.getResources().getStringArray(R.array.kota_banjar);
-                break;
-            case KOTA_BEKASI:
-                paslon = context.getResources().getStringArray(R.array.kota_bekasi);
-                break;
-            case KABUPATEN_PURWAKARTA:
-                paslon = context.getResources().getStringArray(R.array.kabupaten_purwakarta);
-                break;
-            case KABUPATEN_SUMEDANG:
-                paslon = context.getResources().getStringArray(R.array.kabupaten_sumedang);
-                break;
-            case KABUPATEN_SUBANG:
-                paslon = context.getResources().getStringArray(R.array.kabupaten_subang);
-                break;
-            case KABUPATEN_KUNINGAN:
-                paslon = context.getResources().getStringArray(R.array.kabupaten_kuningan);
-                break;
-            case KABUPATEN_MAJALENGKA:
-                paslon = context.getResources().getStringArray(R.array.kabupaten_majalengka);
-                break;
-            case KABUPATEN_GARUT:
-                paslon = context.getResources().getStringArray(R.array.kabupaten_garut);
-                break;
-            case KABUPATEN_CIAMIS:
-                paslon = context.getResources().getStringArray(R.array.kabupaten_ciamis);
+            case KOTA_TEGAL:
+                paslon = context.getResources().getStringArray(R.array.kota_tegal);
                 break;
         }
         addToList(paslon);
